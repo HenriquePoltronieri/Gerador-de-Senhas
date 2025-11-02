@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Gerador de Senhas</title>
 
     <link rel="stylesheet" href="src/styles/style.css">
@@ -14,7 +17,45 @@
 <body>
 
     <div id="container">
-        <img src="" alt="">
+        <img src="src/img/illustration.svg" alt="">
+        <h1 id="title">Gerar Senha</h1>
+
+        <div id="password-container">
+            <span id="password"></span>
+            <button id="copy">
+                <i class="fa-solid fa-copy"></i>
+            </button>
+        </div>
+
+        <div id="password-items">
+            <div class="item">
+                <input id="size" name="number" type="number">
+                <label for="size">Quantidade de caracteres</label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="include-uppercase" id="include-uppercase">
+                <label for="include-uppercase">Incluir letra maiúscula</label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="include-lowercase" id="include-lowercase">
+                <label for="include-lowercase">Incluir letra minúscula</label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="include-number" id="include-number">
+                <label for="include-number">Incluir número</label>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" name="include-special-character" id="include-special-character">
+                <label for="include-special-character">Incluir caractere especial</label>
+            </div>
+
+            <button id="generate">Gerar Senha</button>
+
+        </div>
     </div>
 
 </body>
